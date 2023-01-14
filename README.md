@@ -18,6 +18,6 @@ To change it, modify `conf/config.ini`.
 - [Tabulate](https://pypi.org/project/tabulate/) `0.9.0`
 
 ### Virtual Environment
-Create a new virtual environment directory using `python -m venv venv`.
+Create a new virtual environment directory using `python -m venv venv`.<br>
 In the command line, run `venv/Scripts/activate` to start the virtual environment.<br>
 Run `deactivate` to stop it.
