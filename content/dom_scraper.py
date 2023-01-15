@@ -1,9 +1,18 @@
-from utils.page_parser import parse_url
+from utils.page_parser import prepare_soup
+import os
 
 
-def extra_data():
-    soup = parse_url()
-    table = soup.find('div', {'class': 'table-responsive'}).find('table')
+def find_selected_region():
+    """
+    Locates the selected region tab and sets the value 'region' in the system variables.
+    :return: A string of the region.
+    """
+    os.environ['region'] = prepare_soup().find('div', {'class': 'tabs'}).find('a', {'class': 'active'}).text
+    return os.environ.get('region')
+
+
+def extract_rates_data():
+    table = prepare_soup().find('div', {'class': 'table-responsive'}).find('table')
     table_content = []
     for tr in table.find('tbody').find_all('tr'):
         row_data = ["", "", "", ""]

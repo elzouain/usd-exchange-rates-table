@@ -1,8 +1,8 @@
 from tabulate import tabulate
-
-from content import tag_finder
+from content import dom_scraper, find_selected_region
 
 
 def print_formatted_table():
     headers = ['Convert from', 'Convert to', 'Country', 'Rate']
-    print(tabulate(tag_finder.extra_data(), headers=headers, tablefmt="fancy_grid", numalign='left'))
+    print('\n{} USD CONVERSION RATES IN {} {}'.format("-" * 10, find_selected_region().upper(), "-" * 10))
+    print(tabulate(dom_scraper.extract_rates_data(), headers=headers, tablefmt="fancy_grid", numalign='left'))

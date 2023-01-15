@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class ConfigurationFile(Enum):
+class ConfigFilePath(Enum):
     DEFAULT = '/conf/config.ini'
 
     def __str__(self):
