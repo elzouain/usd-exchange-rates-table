@@ -2,7 +2,7 @@ from utils.formatter import print_formatted_table
 
 """
 Author: Simon Zouain
-Description: This script scrapes a the USD conversion rate table from a website
+Description: This script scrapes the USD conversion rate table from a website
 and prints a the extracted values in a formatted table.
 """
 

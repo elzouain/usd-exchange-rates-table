@@ -13,7 +13,9 @@ By default, the values will be scraped from https://www.exchange-rates.org/curre
 To change it, modify `conf/config.ini`.
 
 ### Libraries
+- [Python](https://www.python.org/) `3.11.1`
 - [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) `4.11.1`
+- [pytest](https://docs.pytest.org/en/7.2.x/contents.html) `7.2.1`
 - [Requests](https://pypi.org/project/requests/) `2.28.2`
 - [Tabulate](https://pypi.org/project/tabulate/) `0.9.0`
 
