@@ -1,1 +1,1 @@
-from .tag_finder import *
+from .dom_scraper import *
