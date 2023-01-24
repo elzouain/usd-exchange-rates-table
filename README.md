@@ -8,9 +8,18 @@ Displays a table containing USD exchange rate per country, as in the example bel
 | USD | ARS        | Argentine Peso  | 180.951    |
 | USD | BSD        | Bahamian Dollar | 1          |
 
-### Configuration
-By default, the values will be scraped from https://www.exchange-rates.org/currentRates/A/USD.
-To change it, modify `conf/config.ini`.
+### Usage
+Simply run `py main.py`.<br>
+You can change the region by using the `-r <region>` flag (default = america).<br>
+The possible options include:
+- `africa`
+- `america`
+- `asia`
+- `europe`
+- `middle_east`
+
+You can also set the max amount of rows using the `-m <row_count>` flag.<br>
+The available URLs are contained in `/conf/config.ini` 
 
 ### Libraries
 - [Python](https://www.python.org/) `3.11.1`
@@ -23,3 +32,6 @@ To change it, modify `conf/config.ini`.
 In the command line, run `venv/Scripts/activate` to start the virtual environment.
 Use `deactivate` to stop it.<br>
 On Windows PowerShell, if you get the `UnauthorizedAccess` error, run `Set-ExecutionPolicy remotesigned`.
+
+### Testing
+Run `pytest .` to execute tests.
